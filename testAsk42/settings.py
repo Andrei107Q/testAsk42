@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'testAsk42.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mapsCoordinates',
-        'USER' : 'Andrei',
-        'PASSWORD' : 'ghbvf107',
+        'NAME': 'mapspoint',
+        'USER' : 'admin',
+        'PASSWORD' : 'admin',
         'HOST' : 'localhost',
         'PORT' : '5432',
     }

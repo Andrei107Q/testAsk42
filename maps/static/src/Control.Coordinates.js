@@ -76,11 +76,12 @@ L.Control.Coordinates = L.Control.extend({
 			L.DomUtil.get(this._lat).innerHTML = '<strong>' + this.options.latitudeText + ':</strong> ' + obj.latlng.lat.toFixed(this.options.precision).toString();
 			L.DomUtil.get(this._lng).innerHTML = '<strong>' + this.options.longitudeText + ':</strong> ' + obj.latlng.lng.toFixed(this.options.precision).toString();
 
-            cord = obj.latlng.lat.toFixed(this.options.precision).toString()
-            cord1 = obj.latlng.lng.toFixed(this.options.precision).toString()
+
+            coordinatesLat = obj.latlng.lat.toFixed(this.options.precision).toString()
+            coordinatesLon = obj.latlng.lng.toFixed(this.options.precision).toString()
             // alert(obj.latlng.lng.toFixed(this.options.precision).toString())
 
-            return cord, cord1;
+            return coordinatesLat, coordinatesLon;
 
 		}
 	}
