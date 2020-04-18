@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Points {% endblock %}
+
+
+{% block content %}
+
+    <h3>Saved coordinates:</h3>
+
+    {% for point in points %}
+        <p>{{ point.pointer }}</p>
+    {% endfor %}
+
+    <br>
+    <form method="LINK" action="{% url 'startpage' %}">
+        <input type="submit" value="Back">
+    </form>
+
+{% endblock %}

@@ -10,9 +10,9 @@ def startpage(request):
         pass
     else:
         Point.objects.create(pointer=dot)
-    return render(request, 'basemaps.html')
+    return render(request, 'maps/maps.html')
 
 
 def showpoint(request):
     points = Point.objects.all()
-    return render(request, 'showpoints.html', {'points': points})
+    return render(request, 'maps/pionts.html', {'points': points})
